@@ -1,0 +1,23 @@
+{
+  "name": "blog-app-gql",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/progmamun/blog-app.git",
+  "author": "progmamun <mamun333089@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon --watch './**/*.ts' --exec 'ts-node' src/index.ts"
+  },
+  "dependencies": {
+    "@apollo/server": "^4.9.5",
+    "@prisma/client": "5.5.2",
+    "@types/node": "^20.9.0",
+    "graphql": "^16.8.1",
+    "prisma": "^5.5.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.2.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

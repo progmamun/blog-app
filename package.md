@@ -1,0 +1,11 @@
+- yarn init -y
+- yarn add @apollo/server graphql
+- yarn add typescript
+- yarn add @types/node
+- yarn add ts-node-dev
+- yarn add -D nodemon
+- npx tsc --init
+- yarn add prisma
+- npx prisma init
+- yarn add
+- yarn add
