@@ -7,5 +7,4 @@
 - npx tsc --init
 - yarn add prisma
 - npx prisma init
-- yarn add
-- yarn add
+- yarn add @prisma/client
