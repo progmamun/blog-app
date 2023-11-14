@@ -8,3 +8,7 @@
 - yarn add prisma
 - npx prisma init
 - yarn add @prisma/client
+- yarn add bcrypt
+- yarn add -D @types/bcrypt
+- yarn add jsonwebtoken
+- yarn add -D @types/jsonwebtoken
