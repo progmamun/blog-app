@@ -31,6 +31,36 @@ export const resolvers = {
         expiresIn: "1d",
       });
       return {
+        userError: null,
+        token: token,
+      };
+    },
+    signin: async (parent: any, args: any, context: any) => {
+      const user = await prisma.user.findFirst({
+        where: {
+          email: args.email,
+        },
+      });
+
+      if (!user) {
+        return {
+          userError: "Email or Password not correct!",
+          token: null,
+        };
+      }
+
+      const correctPass = await bcrypt.compare(args.password, user.password);
+      if (!correctPass) {
+        return {
+          userError: "Email or Password not correct!",
+          token: null,
+        };
+      }
+      const token = jwt.sign({ userId: user.id }, "signature", {
+        expiresIn: "1d",
+      });
+      return {
+        userError: null,
         token: token,
       };
     },
