@@ -39,7 +39,7 @@ export const typeDefs = `#graphql
         name: String!
         email: String!
         createdAt: String!
-        post: [Post]
+        posts: [Post]
     }
     
     type Profile {
