@@ -14,3 +14,4 @@
 - yarn add -D @types/jsonwebtoken
 - yarn add dotenv
 - $ Run `openssl rand -base64 32` to generate a secret.
+- yarn add dataloader
